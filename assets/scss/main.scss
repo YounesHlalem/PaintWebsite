@@ -1,0 +1,48 @@
+$primary: #FFCE00;
+$dark: #171717;
+$light: #F3F3F3;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #F3F3F3;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    background: #171717;
+    section {
+        display: block;
+        margin: 15px auto;
+        width: 30px;
+        height: 30px;
+    }
+    .colors {
+        background: #171717;
+        border: 1px solid #F3F3F3;
+        position: relative;
+        .color-picker {
+            display: none;
+            width: 200px;
+            height: 25px;
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+        }
+        .color-picker:focus {
+            display: block;
+        }
+    }
+    .colors:hover {
+        .color-picker {
+            display: block;
+        }
+    }
+}
